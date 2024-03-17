@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yunus\\Projects\\hubdoor\\hubdoor.csproj": {}
+    "C:\\Users\\Yunus\\Projects\\hubdoor\\api\\hubdoor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yunus\\Projects\\hubdoor\\hubdoor.csproj": {
+    "C:\\Users\\Yunus\\Projects\\hubdoor\\api\\hubdoor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yunus\\Projects\\hubdoor\\hubdoor.csproj",
+        "projectUniqueName": "C:\\Users\\Yunus\\Projects\\hubdoor\\api\\hubdoor.csproj",
         "projectName": "hubdoor",
-        "projectPath": "C:\\Users\\Yunus\\Projects\\hubdoor\\hubdoor.csproj",
+        "projectPath": "C:\\Users\\Yunus\\Projects\\hubdoor\\api\\hubdoor.csproj",
         "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yunus\\Projects\\hubdoor\\obj\\",
+        "outputPath": "C:\\Users\\Yunus\\Projects\\hubdoor\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config"
