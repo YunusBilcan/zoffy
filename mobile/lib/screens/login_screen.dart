@@ -23,7 +23,7 @@ class _LoginScreenState extends State<LoginScreen> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("lib/assets/login_screen_background.jpg"), // Burası asset'inizi gösterecek.
+            image: AssetImage("lib/assets/login_screen_background.jpg"), 
             fit: BoxFit.cover,
           ),
         ),
@@ -44,7 +44,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   suffixIcon: IconButton(
                     icon: Icon(Icons.visibility_off),
                     onPressed: () {
-                      // Şifre görünürlüğü işlevi
+                     
                     },
                   ),
                 ),
@@ -63,25 +63,25 @@ class _LoginScreenState extends State<LoginScreen> {
                   Text('Giriş Bilgilerimi Kaydet'),
                 ],
               ),
-              SizedBox(height: 20), // Butonlar arası boşluk ekleyin
+              SizedBox(height: 20), 
               ElevatedButton(
                 child: Text('Giriş Yap'),
                 onPressed: () {
-                  // Giriş işlevi
+                  
                 },
                 style: ElevatedButton.styleFrom(
                   foregroundColor: Colors.white,
-                  backgroundColor: Colors.blue, // Yazı rengi
+                  backgroundColor: Colors.blue, 
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30.0), // Düğme yuvarlaklığı
+                    borderRadius: BorderRadius.circular(30.0), 
                   ),
-                  padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15), // Düğme padding'i
+                  padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15), 
                 ),
               ),
               TextButton(
                 child: Text('Hesap Oluştur'),
                 onPressed: () {
-                  // Hesap oluşturma sayfasına yönlendirme işlevi
+                
                 },
               ),
             ],
