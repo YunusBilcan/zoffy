@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
-
 namespace api.Controllers
 {
     [ApiController]
