@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Bson;
 using MongoDB.Driver;
+
 namespace api.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
+    [ApiController]
     public class UserController : ControllerBase
     {
         private readonly IMongoCollection<User> _users;
@@ -11,40 +13,58 @@ namespace api.Controllers
         public UserController(IMongoClient client)
         {
             var database = client.GetDatabase("zofy");
+
             _users = database.GetCollection<User>("users");
         }
 
-        [HttpPost("CreateUser")]
-        public async Task<User> CreateUser(User user)
+        [HttpGet]
+        public ActionResult<List<User>> Get()
         {
-            await _users.InsertOneAsync(user);
+            var users = _users.Find(user => true).ToList();
+            return users;
+        }
+
+        [HttpGet("{id:length(24)}", Name = "GetUser")]
+        public ActionResult<User> Get(ObjectId id)
+        {
+            var user = _users.Find(user => user.Id == id).FirstOrDefault();
+            if (user == null)
+            {
+                return NotFound();
+            }
             return user;
         }
 
-        [HttpPost("Login")]
-        public async Task<User> Login(User loginRequest)
+        [HttpPost]
+        public ActionResult<User> Create(User user)
         {
-            var user = await _users.Find(u => u.Email == loginRequest.Email && u.Password == loginRequest.Password).FirstOrDefaultAsync();
-            return user;
+            _users.InsertOne(user);
+            return CreatedAtRoute("GetUser", new { id = user.Id.ToString() }, user);
         }
 
-        [HttpGet("GetUser")]
-        public async Task<User> GetUser(string email)
+        [HttpPut("{id:length(24)}")]
+        public IActionResult Update(ObjectId id, User updatedUser)
         {
-            var user = await _users.Find(u => u.Email == email).FirstOrDefaultAsync();
-            return user;
+            var user = _users.Find(user => user.Id == id).FirstOrDefault();
+            if (user == null)
+            {
+                return NotFound();
+            }
+            _users.ReplaceOne(user => user.Id == id, updatedUser);
+            return NoContent();
+        }
+
+        [HttpDelete("{id:length(24)}")]
+        public IActionResult Delete(ObjectId id)
+        {
+            var user = _users.Find(user => user.Id == id).FirstOrDefault();
+            if (user == null)
+            {
+                return NotFound();
+            }
+            _users.DeleteOne(user => user.Id == id);
+            return NoContent();
         }
     }
 
-    public class User
-    {
-        public string? Email { get; set; }
-        public string? Password { get; set; }
-    }
-
-    public class LoginRequest
-    {
-        public string? Email { get; set; }
-        public string? Password { get; set; }
-    }
 }
