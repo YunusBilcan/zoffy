@@ -1230,19 +1230,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Yunus\\.nuget\\packages\\": {}
+    "/Users/emreciftci/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yunus\\Projects\\hubdoor\\api\\hubdoor.csproj",
+      "projectUniqueName": "/Users/emreciftci/Desktop/hubdoor/api/hubdoor.csproj",
       "projectName": "hubdoor",
-      "projectPath": "C:\\Users\\Yunus\\Projects\\hubdoor\\api\\hubdoor.csproj",
-      "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yunus\\Projects\\hubdoor\\api\\obj\\",
+      "projectPath": "/Users/emreciftci/Desktop/hubdoor/api/hubdoor.csproj",
+      "packagesPath": "/Users/emreciftci/.nuget/packages/",
+      "outputPath": "/Users/emreciftci/Desktop/hubdoor/api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/emreciftci/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -1303,7 +1303,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
