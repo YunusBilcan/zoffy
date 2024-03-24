@@ -1235,11 +1235,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yunus\\Projects\\hubdoor\\api\\hubdoor.csproj",
+      "projectUniqueName": "c:\\Users\\Yunus\\Projects\\hubdoor\\api\\hubdoor.csproj",
       "projectName": "hubdoor",
-      "projectPath": "C:\\Users\\Yunus\\Projects\\hubdoor\\api\\hubdoor.csproj",
+      "projectPath": "c:\\Users\\Yunus\\Projects\\hubdoor\\api\\hubdoor.csproj",
       "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yunus\\Projects\\hubdoor\\api\\obj\\",
+      "outputPath": "c:\\Users\\Yunus\\Projects\\hubdoor\\api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1306,13 +1306,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Yunus\\Projects\\hubdoor\\api\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

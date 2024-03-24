@@ -39,7 +39,7 @@ namespace api.Controllers
         public ActionResult<User> Create(User user)
         {
             _users.InsertOne(user);
-            return CreatedAtRoute("GetUser", new { id = user.Id.ToString() }, user);
+            return Ok(user);
         }
 
         [HttpPut("{id:length(24)}")]
