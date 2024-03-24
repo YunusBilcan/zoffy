@@ -15,11 +15,10 @@ namespace api.Controllers
             _users = database.GetCollection<User>("users");
         }
 
-        [HttpGet]
+        [HttpPost]
         public async Task<ActionResult<Login>> Login(Login login)
         {
             var logindata = await _users.Find(u => u.Email == login.Email && u.Password == login.Password).FirstOrDefaultAsync();
-            Console.WriteLine(login);
             return Ok(logindata);
         }
     }
