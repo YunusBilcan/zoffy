@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("hubdoor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+167776c7271b8ef5c717eea7c20dbae9a8ad3464")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86c34ff8df14988adeb922d8cd50e421e0751fee")]
+>>>>>>> parent of 66d2dbc (api birdaha güncellendi)
 [assembly: System.Reflection.AssemblyProductAttribute("hubdoor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("hubdoor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
