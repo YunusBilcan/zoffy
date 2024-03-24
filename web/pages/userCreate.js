@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { TextField, Button } from '@mui/material';
+import RootLayout from '../app/layout';
 
 // Define the UserCreate component
 const UserCreate = () => {
@@ -49,6 +50,8 @@ const UserCreate = () => {
 
   // Render the form
   return (
+    <RootLayout>
+
     <div>
       <form onSubmit={handleSubmit}>
         <div>
@@ -86,6 +89,8 @@ const UserCreate = () => {
         </div>
       </form>
     </div>
+    </RootLayout>
+
   );
 };
 

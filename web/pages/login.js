@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { TextField, Button } from "@mui/material";
+import RootLayout from "../app/layout";
 
 const Login = () => {
   const [Email, setEmail] = useState("");
@@ -27,7 +28,10 @@ const Login = () => {
     });
 
       if (response.status === 200) {
-        alert("Başarılı!");
+        const data = await response.text();
+        const sessionId = data;
+        window.sessionStorage.setItem("sessionId", sessionId);
+        window.location.href = "/account";
       } else {
         alert("Başarısız!");
       }
@@ -37,6 +41,8 @@ const Login = () => {
   };
 
   return (
+    <RootLayout>
+
     <div>
       <TextField
         label="Email"
@@ -53,6 +59,8 @@ const Login = () => {
         Submit
       </Button>
     </div>
+    </RootLayout>
+
   );
 };
 

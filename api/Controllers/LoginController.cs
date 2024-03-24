@@ -16,10 +16,11 @@ namespace api.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Login>> Login(Login login)
+        public async Task<ActionResult<User>> Login(Login login)
         {
             var logindata = await _users.Find(u => u.Email == login.Email && u.Password == login.Password).FirstOrDefaultAsync();
-            return Ok(logindata);
+            string result = logindata.Id.ToString();
+            return Ok(result);
         }
     }
 }

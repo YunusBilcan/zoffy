@@ -17,4 +17,5 @@ public class User
         public string? Phone { get; set; }
         public string? Salary { get; set; }
         public string? Job { get; set; }
+        public string? UserPicture { get; set; }
     }
