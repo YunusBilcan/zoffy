@@ -10,13 +10,19 @@ namespace api.Controllers
     public class CreditCardController : ControllerBase
     {
         private readonly IMongoCollection<Cart> _cart;
+<<<<<<< HEAD
         private readonly IMongoCollection<User> _user;
+=======
+>>>>>>> ef125a3cde044403fae8ef5fc66a3af2e4cf0343
 
         public CreditCardController(IMongoClient client)
         {
             var database = client.GetDatabase("zofy");
             _cart = database.GetCollection<Cart>("carts");
+<<<<<<< HEAD
             _user = database.GetCollection<User>("users");
+=======
+>>>>>>> ef125a3cde044403fae8ef5fc66a3af2e4cf0343
         }
 
         // GET: api/creditcard
@@ -41,6 +47,7 @@ namespace api.Controllers
 
         // POST: api/creditcard
         [HttpPost]
+<<<<<<< HEAD
         public ActionResult<Cart> Post(string creditCard)
         {
             var objectId = new ObjectId(creditCard);
@@ -68,6 +75,14 @@ namespace api.Controllers
             }
         }
 
+=======
+        public ActionResult<Cart> Post(Cart creditCard)
+        {
+            _cart.InsertOne(creditCard);
+            return CreatedAtAction(nameof(Get), new { id = creditCard.Id }, creditCard);
+        }
+        // DELETE: api/creditcard/{id}
+>>>>>>> ef125a3cde044403fae8ef5fc66a3af2e4cf0343
         [HttpDelete("{id}")]
         public IActionResult Delete(ObjectId id)
         {
