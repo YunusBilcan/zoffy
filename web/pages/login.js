@@ -27,7 +27,10 @@ const Login = () => {
     });
 
       if (response.status === 200) {
-        alert("Başarılı!");
+        const data = await response.text();
+        const sessionId = data;
+        window.sessionStorage.setItem("sessionId", sessionId);
+        window.location.href = "/account";
       } else {
         alert("Başarısız!");
       }

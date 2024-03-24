@@ -21,13 +21,14 @@ namespace api.Controllers
         public ActionResult<List<User>> Get()
         {
             var users = _users.Find(user => true).ToList();
-            return users;
+            return Ok(users);
         }
 
         [HttpGet("{id:length(24)}", Name = "GetUser")]
-        public ActionResult<User> Get(ObjectId id)
+        public ActionResult<User> Get(string id)
         {
-            var user = _users.Find(user => user.Id == id).FirstOrDefault();
+            var objectId = new ObjectId(id);
+            var user = _users.Find(user => user.Id == objectId).FirstOrDefault();
             if (user == null)
             {
                 return NotFound();
