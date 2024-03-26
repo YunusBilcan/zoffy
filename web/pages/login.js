@@ -15,34 +15,35 @@ const Login = () => {
 
   const handleSubmit = async () => {
     try {
-    const response = await fetch("http://localhost:5175/api/Login", {
-      method: "Post",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email: Email,
-        password: Password,
-      }),
-    });
+      const response = await fetch("http://localhost:5175/api/Login", {
+        method: "Post",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: Email,
+          password: Password,
+        }),
+      });
 
       if (response.status === 200) {
         alert("Başarılı!");
+        const sessionId = await response.text();
+        sessionStorage.setItem("sessionId", sessionId);
+        window.location.href = "/account";
       } else {
         alert("Başarısız!");
+        console.error("Error:", response.status);
       }
-    } catch (error) {
+    }
+    catch (error) {
       console.error("Error:", error);
     }
   };
 
   return (
     <div>
-      <TextField
-        label="Email"
-        value={Email}
-        onChange={handleEmailChange}
-      />
+      <TextField label="Email" value={Email} onChange={handleEmailChange} />
       <TextField
         label="Password"
         type="password"
