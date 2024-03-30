@@ -42,8 +42,9 @@ namespace api.Controllers
         public ActionResult<Cart> Post(Cart creditCard)
         {
             Random random = new Random();
+            
             creditCard.Id = ObjectId.GenerateNewId();
-            creditCard.CartNumber = string.Join("", Guid.NewGuid().ToString().Take(16));
+            creditCard.CartNumber = string.Join("", Enumerable.Range(0, 16).Select(_ => random.Next(0, 10)));
             creditCard.expireMonth = DateTime.Now.Month;
             creditCard.expireYear = DateTime.Now.Year + 5;
             creditCard.Cvv = random.Next(3, 3);
