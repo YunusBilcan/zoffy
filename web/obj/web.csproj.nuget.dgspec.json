@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yunus\\Projects\\hubdoor\\web\\web.csproj": {}
+    "C:\\Users\\Yunus\\Projects\\zoffy\\web\\web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yunus\\Projects\\hubdoor\\web\\web.csproj": {
+    "C:\\Users\\Yunus\\Projects\\zoffy\\web\\web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yunus\\Projects\\hubdoor\\web\\web.csproj",
+        "projectUniqueName": "C:\\Users\\Yunus\\Projects\\zoffy\\web\\web.csproj",
         "projectName": "web",
-        "projectPath": "C:\\Users\\Yunus\\Projects\\hubdoor\\web\\web.csproj",
+        "projectPath": "C:\\Users\\Yunus\\Projects\\zoffy\\web\\web.csproj",
         "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yunus\\Projects\\hubdoor\\web\\obj\\",
+        "outputPath": "C:\\Users\\Yunus\\Projects\\zoffy\\web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1235,11 +1235,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Yunus\\Projects\\hubdoor\\api\\hubdoor.csproj",
+      "projectUniqueName": "C:\\Users\\Yunus\\Projects\\zoffy\\api\\hubdoor.csproj",
       "projectName": "hubdoor",
-      "projectPath": "c:\\Users\\Yunus\\Projects\\hubdoor\\api\\hubdoor.csproj",
+      "projectPath": "C:\\Users\\Yunus\\Projects\\zoffy\\api\\hubdoor.csproj",
       "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Yunus\\Projects\\hubdoor\\api\\obj\\",
+      "outputPath": "C:\\Users\\Yunus\\Projects\\zoffy\\api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config"
