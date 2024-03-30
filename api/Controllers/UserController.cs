@@ -25,9 +25,11 @@ namespace api.Controllers
         }
 
         [HttpGet("{id:length(24)}", Name = "GetUser")]
-        public ActionResult<User> Get(ObjectId id)
+        public ActionResult<User> Get(string id)
         {
-            var user = _users.Find(user => user.Id == id).FirstOrDefault();
+            var _id = new ObjectId(id);
+
+            var user = _users.Find(user => user.Id == _id).FirstOrDefault();
             if (user == null)
             {
                 return NotFound();

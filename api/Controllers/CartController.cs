@@ -41,8 +41,17 @@ namespace api.Controllers
         [HttpPost]
         public ActionResult<Cart> Post(Cart creditCard)
         {
+            Random random = new Random();
+            creditCard.Id = ObjectId.GenerateNewId();
+            creditCard.CartNumber = random.Next(16, 16).ToString();
+            creditCard.expireMonth = DateTime.Now.Month;
+            creditCard.expireYear = DateTime.Now.Year + 5;
+            creditCard.Cvv = random.Next(3, 3);
+            creditCard.CartName = creditCard.CartName;
+
             _cart.InsertOne(creditCard);
-            return CreatedAtAction(nameof(Get), new { id = creditCard.Id }, creditCard);
+            Cart sonuc = _cart.Find(c => c.Id == creditCard.Id).FirstOrDefault();
+            return Ok(sonuc);
         }
         // DELETE: api/creditcard/{id}
         [HttpDelete("{id}")]

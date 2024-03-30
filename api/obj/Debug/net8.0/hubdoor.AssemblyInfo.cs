@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("hubdoor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+110d3a2d4b8c5fbab02dce8cb8738a427ac94bb6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42ade831865d75dd52027c88b394b84f4ebe2868")]
 [assembly: System.Reflection.AssemblyProductAttribute("hubdoor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("hubdoor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
