@@ -2,7 +2,7 @@
   "version": 2,
   "dgSpecHash": "pxFlp0OaCn0E4TReE+IAPkNb/WsNXzsG+o8mTwOj9HVLgrzzZHblmayYS1hP/0/9X+UtshzBtpiPYU4n1YslLA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yunus\\Projects\\zoffy\\api\\hubdoor.csproj",
+  "projectFilePath": "C:\\Users\\Yunus\\Projects\\zoffy\\api\\Zoffy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yunus\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\Yunus\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

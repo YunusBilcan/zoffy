@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yunus\\Projects\\zoffy\\api\\hubdoor.csproj": {}
+    "C:\\Users\\Yunus\\Projects\\zoffy\\api\\Zoffy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yunus\\Projects\\zoffy\\api\\hubdoor.csproj": {
+    "C:\\Users\\Yunus\\Projects\\zoffy\\api\\Zoffy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yunus\\Projects\\zoffy\\api\\hubdoor.csproj",
-        "projectName": "hubdoor",
-        "projectPath": "C:\\Users\\Yunus\\Projects\\zoffy\\api\\hubdoor.csproj",
+        "projectUniqueName": "C:\\Users\\Yunus\\Projects\\zoffy\\api\\Zoffy.csproj",
+        "projectName": "Zoffy",
+        "projectPath": "C:\\Users\\Yunus\\Projects\\zoffy\\api\\Zoffy.csproj",
         "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Yunus\\Projects\\zoffy\\api\\obj\\",
         "projectStyle": "PackageReference",
