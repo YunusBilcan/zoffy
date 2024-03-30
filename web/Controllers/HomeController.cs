@@ -20,6 +20,8 @@ public class HomeController : Controller
 
     public IActionResult Privacy()
     {
+        Random random = new Random();
+        int randomNumber = random.Next();
         return View();
     }
 
