@@ -43,7 +43,7 @@ namespace api.Controllers
         {
             Random random = new Random();
             creditCard.Id = ObjectId.GenerateNewId();
-            creditCard.CartNumber = random.Next(16, 16).ToString();
+            creditCard.CartNumber = string.Join("", Guid.NewGuid().ToString().Take(16));
             creditCard.expireMonth = DateTime.Now.Month;
             creditCard.expireYear = DateTime.Now.Year + 5;
             creditCard.Cvv = random.Next(3, 3);
